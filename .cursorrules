@@ -1,0 +1,50 @@
+{
+  "files": {
+    "include": [
+      "docker-compose.yml",
+      "Dockerfile",
+      "wp-config.php",
+      "functions.php",
+      "theme.json",
+      "*.php",
+      "*.css",
+      "*.js",
+      "*.json"
+    ],
+    "exclude": [
+      "node_modules/",
+      "vendor/",
+      "wp-content/uploads/",
+      "*.log",
+      "*.sql",
+      ".git/"
+    ]
+  },
+  "codingStandards": {
+    "php": {
+      "standard": "WordPress",
+      "fixOnSave": true
+    },
+    "javascript": {
+      "standard": "eslint:recommended",
+      "fixOnSave": true
+    },
+    "css": {
+      "standard": "stylelint",
+      "fixOnSave": true
+    }
+  },
+  "docker": {
+    "composeFile": "docker-compose.yml",
+    "services": ["wordpress", "db"],
+    "autoRestart": true
+  },
+  "database": {
+    "engine": "mysql",
+    "host": "db",
+    "port": 3306,
+    "username": "root",
+    "password": "rootpassword",
+    "database": "wordpress"
+  }
+}

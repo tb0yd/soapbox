@@ -3,9 +3,7 @@
     "include": [
       "docker-compose.yml",
       "Dockerfile",
-      "wp-config.php",
-      "functions.php",
-      "theme.json",
+      "wordpress/wp-config.php",
       "*.php",
       "*.css",
       "*.js",
@@ -14,7 +12,7 @@
     "exclude": [
       "node_modules/",
       "vendor/",
-      "wp-content/uploads/",
+      "wordpress/wp-content/uploads/",
       "*.log",
       "*.sql",
       ".git/"

@@ -1,4 +1,4 @@
-# WordPress Podcast Hosting Stack
+# Soapbox
 
 A production-ready WordPress hosting solution optimized for podcast hosting, featuring automatic media offloading to AWS S3, CloudFront CDN integration, and Let's Encrypt SSL.
 
